@@ -44,7 +44,7 @@
                     .wrapper .right {
                     width: calc(100% - 140px);
                     }*/
-                    .wrapper{
+                   /* .wrapper{
                     overflow: hidden;        
                     }
 
@@ -54,6 +54,56 @@
 
                     .wrapper .right {
                      margin-left: 150px;
+                    }*/
+                    /*.wrapper .left {
+                    position: absolute;
+                    }
+
+                    .wrapper .right {
+                     margin-left: 150px;
+                     }*/
+                     /*.wrapper {
+                      overflow: auto;
+                     }
+
+                    .wrapper .left {
+                     float: left;
+                     margin-right: 20px;
+                    }
+
+                     .wrapper .right {
+                    margin-left: 0;
+                    overflow: auto;
+                    }*/
+                    /*.wrapper {
+                    display: flex;
+                    align-items: flex-start;
+                    }
+
+                    .wrapper .left {
+                     flex: 0 0 auto;
+                     }
+
+                     .wrapper .right {
+                     flex: 1 1 auto;
+                    }*/
+                    .wrapper {
+                    display: grid;
+                    grid-template-columns: 120px 1fr;
+                    align-items: start;
+                    }
+
+                    .wrapper .left,
+                    .wrapper .right {
+                    box-sizing: border-box;
+                    }
+
+                    .wrapper .left {
+                    grid-column: 1;
+                    }
+
+                    wrapper .right {
+                    grid-column: 2;
                     }
     </style>
     </head>
