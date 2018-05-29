@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <style>
+        body{
+            width:100%;
+        }
+        /*圣杯布局*/
+       /* .three-column::after{
+            content:'';
+            display:table;
+            clear:both;
+        }
+        .three-column{
+            height:200px;
+            border:1px dashed grey;
+            padding:0 200px 0 200px;
+        }
+        .middle-div{
+            width:100%;
+
+            background-color:aquamarine;
+            height:200px;
+
+            float:left;
+        }
+        .left-div{
+            width:200px;
+            background-color:bisque;
+            height:200px;
+
+            float:left;
+            margin-left:-100%;
+
+            position:relative;
+            left:-200px;
+           
+        }
+        .right-div{
+            width:200px;
+            background-color:bisque;
+            height:200px;
+        
+            float:left;
+            margin-left:-200px;
+
+            position:relative;
+            right:-200px;           
+        }*/
+
+/*双飞翼布局*/
+/*
+        .main{
+            width:100%;
+            height:200px;
+            background-color:aquamarine;
+
+            float:left;
+
+        }
+        .left-div{
+            width:200px;
+            height:200px;
+            background-color: bisque;
+
+            float:left;
+            margin-left:-100%;
+        }
+        .right-div{
+            width:200px;
+            height:200px;
+            background-color:bisque;
+
+            float:left;
+            margin-left:-200px;
+        }
+        .middle-div{
+            padding:0 200px 0 200px;
+        }
+        */
+/*Flex布局*/
+/*
+        .three-column{
+            display:flex;
+            height:200px;
+        }
+        .middle-div{
+            background-color: aquamarine;
+            height:200px;
+            flex:1 1 auto;
+        }
+        .left-div{
+            background-color: bisque;
+            height:200px;
+
+            order:-1;
+            flex:200px;
+        }
+        .right-div{
+            background-color:bisque;
+            height:200px;
+            flex:200px;
+        }
+        */
+/*利用Position，主要是绝对定位（万金油）*/
+        body{
+            position:relative;
+        }
+        .three-colomn{
+            position:relative;
+            height:200px;
+        }
+        .middle-div{
+            top:0;
+            height:200px;
+            background-color: aquamarine;
+
+            margin:0 200px 0 200px;
+        }
+        .left-div{
+            top:0;
+            height:200px;
+            background-color: bisque;
+
+            width:200px;
+            position:absolute;
+            left:0;
+        }
+        .right-div{
+            top:0;
+            height:200px;
+            background-color:bisque;
+
+            position:absolute;
+            width:200px;
+            right:0;
+        }
+
+        
+
+        </style>
+    </head>
+    <body>
+        <div class='three-column'>
+            <div class='main'>
+            <div class='middle-div'>
+                     This is the middle-div. This is the middle-div.This is the middle-div.
+                     This is the middle-div.This is the middle-div.This is the middle-div.
+                     This is the middle-div.This is the middle-div.This is the middle-div.
+            </div>
+           </div>
+            <div class='left-div'>
+              This is the left-div.
+            </div>
+            <div class='right-div'>
+              This is the right-div.
+            </div>
+        </div>
+    </body>
+</html>
