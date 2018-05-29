@@ -58,10 +58,34 @@
             border-bottom: 1px solid grey;
         }
         .nav-button{
-            width:30%;
+            width:50%;
             position:relative;
             top:25px;
             left:10%;
+
+            border:1px dashed red;
+        }
+/*main布局*/
+        .main{
+            width:100%;
+            display:flex;
+            margin-left:10%;
+            flex-flow:row wrap;
+        }
+        .content{
+            width:200px;
+            height:200px;
+            margin:10px;
+            border:1px solid grey;
+        }
+
+        .bottom{
+            width:100%;
+            height:100px;
+            background-color: darkgrey;
+        }
+        .com{
+             text-align:center;
 
             border:1px dashed red;
         }
@@ -97,20 +121,20 @@
 
         </div>
         <div class='main'>
-            <div calss='content'>This is Content 1</div>
-            <div calss='content'>This is Content 2</div>
-            <div calss='content'>This is Content 3</div>
-            <div calss='content'>This is Content 4</div>
-            <div calss='content'>This is Content 5</div>
-            <div calss='content'>This is Content 6</div>
-            <div calss='content'>This is Content 7</div>
-            <div calss='content'>This is Content 8</div>
-            <div calss='content'>This is Content 9</div>
-            <div calss='content'>This is Content 10</div>
+            <div class='content'>This is Content 1</div>
+            <div class='content'>This is Content 2</div>
+            <div class='content'>This is Content 3</div>
+            <div class='content'>This is Content 4</div>
+            <div class='content'>This is Content 5</div>
+            <div class='content'>This is Content 6</div>
+            <div class='content'>This is Content 7</div>
+            <div class='content'>This is Content 8</div>
+            <div class='content'>This is Content 9</div>
+            <div class='content'>This is Content 10</div>
 
         </div>
         <div class='bottom'>
-            <p>2018 ife.baidu.com</p>
+            <div class='com'>2018 ife.baidu.com</div>
 
         </div>
     </body>
